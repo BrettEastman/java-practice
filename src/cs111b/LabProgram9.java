@@ -1,4 +1,4 @@
-package general;
+package cs111b;
 
 /*
 Name: Brett Eastman

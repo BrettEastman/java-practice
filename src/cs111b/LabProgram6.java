@@ -1,4 +1,4 @@
-package general;
+package cs111b;
 
 import java.util.Scanner;
 
