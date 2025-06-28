@@ -1,5 +1,10 @@
 package cs111b;
 
+// Statistics are often calculated with varying amounts of input data. Write a program that takes any number of non-negative integers as input, and outputs the max and average. A negative integer ends the input and is not included in the statistics. Assume the input contains at least one non-negative integer.
+
+// Output the average with two digits after the decimal point followed by a newline, which can be achieved as follows:
+// System.out.printf("%.2f\n", average);
+
 /*
 Name: Brett Eastman
 Class: CS111B - Programming Fundamentals in Java
@@ -33,7 +38,7 @@ public class LabProgram12 {
         while (positiveInt >= 0) {
             positiveInt = scnr.nextInt();
             if (positiveInt < 0) {
-                break;
+                break; // Note: I was marked down for using break here
             }
             count++;
             if (positiveInt > max) {

@@ -35,7 +35,7 @@ public class LabProgram16 {
             currentString = scnr.nextLine();
 
             if ((currentString.equals("Done")) || (currentString.equals("done")) || (currentString.equals("d"))) {
-                break;
+                break; // Note: I was marked down for using break here
             } else {
                 for (int i = currentString.length() - 1; i >= 0; i--) {
                     currentChar = currentString.charAt(i);
