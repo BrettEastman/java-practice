@@ -38,6 +38,7 @@ public class LabProgram22 {
         int numWords;
         int i;
         int j;
+        boolean foundChar = false;
 
         numWords = scnr.nextInt();
 
@@ -49,12 +50,13 @@ public class LabProgram22 {
 
         for (i = 0; i < numWords; ++i) {
             currentWord = wordList[i];
+            foundChar = false;
             for (j = 0; j < currentWord.length(); ++j) {
                 currentChar = currentWord.charAt(j);
-                if (currentChar == commonChar) {
+                if (currentChar == commonChar && foundChar == false) {
                     finalString += currentWord;
                     finalString += ",";
-                    break;
+                    foundChar = true;
                 }
             }
         }

@@ -3,7 +3,7 @@ package cs111b;
 /*
 Name: Brett Eastman
 Class: CS111B - Programming Fundamentals in Java
-Date: 06/24/2025
+Date: 07/03/2025 (update to remove "while true" loop)
 Instructor: David Harden
 File Name: LabProgram.java
 Purpose: Program initializes integer array, sortedArray, which is an oversized array
@@ -29,17 +29,16 @@ public class LabProgram18 {
         int i = -1;
         boolean tooMany = false;
 
-        while (true) {
-            currentInt = scnr.nextInt();
+        currentInt = scnr.nextInt();
+
+        while (currentInt != -1 && !tooMany) {
             i++;
-            if (currentInt == -1) {
-                break;
-            } else if (i == 9) {
+            if (i == 9) {
                 tooMany = true;
-                break;
             } else {
                 sortedArray[i] = currentInt;
             }
+            currentInt = scnr.nextInt();
         }
 
         if (tooMany) {
