@@ -1,11 +1,19 @@
 package cs111b.lab1008;
 
+/*
+Name: Brett Eastman
+Class: CS111B - Programming Fundamentals in Java
+Date: 07/14/2025
+Instructor: David Harden
+File Name: StatePair.java
+Purpose: Defined constructor, setters, getters, and printInfo method for StatePair class
+         using the generic types Type1 and Type2.
+*/
+
 public class StatePair<Type1 extends Comparable<Type1>, Type2 extends Comparable<Type2>> {
     private Type1 value1;
     private Type2 value2;
 
-    // TODO: Define a constructor, mutators, and accessors
-    // for StatePair
     public StatePair(Type1 value1, Type2 value2) {
         this.value1 = value1;
         this.value2 = value2;
@@ -27,7 +35,6 @@ public class StatePair<Type1 extends Comparable<Type1>, Type2 extends Comparable
         return this.value2;
     }
 
-    // TODO: Define printInfo() method
     public void printInfo() {
         System.out.println(value1 + ": " + value2);
     }

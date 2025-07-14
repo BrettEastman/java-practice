@@ -95,22 +95,27 @@ public class StatePopulations {
         // Read in ZIP code from user
         myZipCode = scnr.nextInt();
 
+        // For main method in StatePopulations, add string variables myStateAbbrv and
+        // myStateName
+        // Implement for loops to iterate through an ArrayList of state pairs –
+        // one to find the state abbreviation from zipCodeState; one to find the state
+        // name
+        // from abbrevState; one to print the information, including the state name and
+        // population
+
         for (i = 0; i < zipCodeState.size(); ++i) {
-            // TODO: Using ZIP code, find state abbreviation
             if (zipCodeState.get(i).getValue1().compareTo(myZipCode) == 0) {
                 myStateAbbrv = zipCodeState.get(i).getValue2();
             }
         }
 
         for (i = 0; i < abbrevState.size(); ++i) {
-            // TODO: Using state abbreviation, find state name
             if (abbrevState.get(i).getValue1().compareTo(myStateAbbrv) == 0) {
                 myStateName = abbrevState.get(i).getValue2();
             }
         }
 
         for (i = 0; i < statePopulation.size(); ++i) {
-            // TODO: Using state name, find population. Print pair info.
             if (statePopulation.get(i).getValue1().compareTo(myStateName) == 0) {
                 statePopulation.get(i).printInfo();
             }
