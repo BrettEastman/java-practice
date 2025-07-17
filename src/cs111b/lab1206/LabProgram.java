@@ -5,7 +5,7 @@ package cs111b.lab1206;
  * Class: CS111B - Programming Fundamentals in Java
  * Date: 07/17/2025
  * Instructor: David Harden
- * File Name: Course.java
+ * File Name: LabProgram.java
  * Purpose: This program declares the String fileName and initializes it with the nextLine of user input.
  *          It declares the FileInputStream photoFileStream and initializes it with fileName. It also
  *          declares a Scanner object called photoFileInputScanner that is initialized with the
